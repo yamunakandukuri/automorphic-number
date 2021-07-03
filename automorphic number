@@ -1,0 +1,22 @@
+import java.util.*;
+public class practice
+{
+    public static void main(String args[])
+    {
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int r,count=0,temp,s=n*n;
+        temp=n;
+        while(temp>0)
+        {
+            count++;
+            temp=temp/10;
+        }
+        r=(int)(s%(Math.pow(10,count)));
+        if(n==r)
+        System.out.println("automorphic number");
+        else
+        System.out.println("not an automorphic number");
+        }
+    }
